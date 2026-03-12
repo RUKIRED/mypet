@@ -1,0 +1,16 @@
+package sample.common.Repository.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@NoArgsConstructor
+public class AuthEntity {
+	@Id
+	private Long id;
+	private String name;
+	private String password;
+}
