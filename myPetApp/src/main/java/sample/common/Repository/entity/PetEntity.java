@@ -13,6 +13,10 @@ import lombok.NoArgsConstructor;
 public class PetEntity {
 	@Id
 	private Long petId;
-	private String petNameString;
+	private String petName;
 	private UUID userId;
+	private String userName;
+	private String gender;
+	private String type;
+	private int intimacy;
 }
