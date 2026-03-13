@@ -11,4 +11,6 @@ import sample.common.Repository.entity.UserEntity;
 @Repository
 public interface AuthRepository extends JpaRepository<UserEntity, UUID> {
 	Optional<UserEntity> findByUserName(String userName);
+
+	boolean existsByUsername(String username);
 }
