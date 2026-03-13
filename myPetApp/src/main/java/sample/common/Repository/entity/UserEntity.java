@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @Table(name = "users", schema = "public")
 @Data
 @NoArgsConstructor
-public class AuthEntity {
+public class UserEntity {
 	@Id
 	@Column(name = "uuid")
 	private UUID userId;
